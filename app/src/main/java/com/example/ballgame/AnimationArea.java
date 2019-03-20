@@ -64,7 +64,6 @@ public class AnimationArea extends View{
         canvas.drawCircle(blackBall.x, blackBall.y, blackBall.radius, paint);
 
         paint.setColor(Color.WHITE);
-        //Log.d(TAG, "for loop entered");
         for (WhiteBalls whiteBall : whiteBallsList) {
             if(whiteBall.y<canvas.getHeight()){
                 if(!flagPause) {
@@ -81,6 +80,7 @@ public class AnimationArea extends View{
             if (distance <= (whiteBall.radius + blackBall.radius) && (!touched)) {
                 changeLifeScore.changeLife();
                 whiteBall.y = whiteBall.radius;
+                Log.d(TAG, "onDraw:loop exited ");
             }
 
         }
