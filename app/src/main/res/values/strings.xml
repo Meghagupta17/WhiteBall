@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BallGame</string>
+    <string name="lives">Lives: 3</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="score">Score: 0</string>
+</resources>
